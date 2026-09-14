@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pulse Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                PULSE<span>.</span>
+            </div>
+
+            <p class="menu-title">MENU</p>
+
+            <nav>
+                <a href="#" class="active">
+                    <span>▦</span>
+                    Visão geral
+                </a>
+
+                <a href="#">
+                    <span>◫</span>
+                    Analytics
+                </a>
+
+                <a href="#">
+                    <span>◈</span>
+                    Projetos
+                </a>
+
+                <a href="#">
+                    <span>♙</span>
+                    Clientes
+                </a>
+
+                <a href="#">
+                    <span>◌</span>
+                    Mensagens
+                </a>
+            </nav>
+
+            <p class="menu-title">SISTEMA</p>
+
+            <nav>
+                <a href="#">
+                    <span>⚙</span>
+                    Configurações
+                </a>
+
+                <a href="#">
+                    <span>?</span>
+                    Ajuda
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="profile">
+                    <div class="avatar">PK</div>
+
+                    <div>
+                        <strong>Pady Kura</strong>
+                        <small>Administradora</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">DASHBOARD</p>
+                    <h1>Visão geral.</h1>
+                </div>
+
+                <div class="top-actions">
+
+                    <button class="notification">
+                        ♢
+                    </button>
+
+                    <button class="profile-button">
+                        PK
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- WELCOME -->
+            <section class="welcome">
+
+                <div>
+                    <span>SEGUNDA-FEIRA, 14 SET 2026</span>
+
+                    <h2>
+                        Olá, Pady.
+                        <strong>Vamos criar algo incrível.</strong>
+                    </h2>
+                </div>
+
+                <button class="primary-button">
+                    + Novo projeto
+                </button>
+
+            </section>
+
+
+            <!-- MÉTRICAS -->
+            <section class="stats">
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>RECEITA</span>
+                        <span class="icon">↗</span>
+                    </div>
+
+                    <h3>R$ 12.480</h3>
+
+                    <p class="positive">
+                        +18,4% <span>este mês</span>
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>PROJETOS</span>
+                        <span class="icon">◈</span>
+                    </div>
+
+                    <h3>24</h3>
+
+                    <p class="positive">
+                        +6 <span>este mês</span>
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+                        <span>CLIENTES</span>
+                        <span class="icon">♙</span>
+                    </div>
+
+                    <h3>148</h3>
+
+                    <p class="positive">
+                        +12,5% <span>este mês</span>
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card highlight">
+
+                    <div class="stat-top">
+                        <span>CONVERSÃO</span>
+                        <span class="icon">%</span>
+                    </div>
+
+                    <h3>68,7%</h3>
+
+                    <p>
+                        +4,2% <span>este mês</span>
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- GRID PRINCIPAL -->
+            <section class="content-grid">
+
+
+                <!-- GRÁFICO -->
+                <article class="panel chart-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-label">PERFORMANCE</span>
+                            <h2>Visão financeira</h2>
+                        </div>
+
+                        <select>
+                            <option>Últimos 6 meses</option>
+                            <option>Últimos 30 dias</option>
+                            <option>Este ano</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="chart">
+
+                        <div class="chart-value">
+                            R$ 12.480
+                        </div>
+
+                        <div class="chart-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="bars">
+
+                            <div class="bar" style="height: 35%;">
+                                <small>ABR</small>
+                            </div>
+
+                            <div class="bar" style="height: 48%;">
+                                <small>MAI</small>
+                            </div>
+
+                            <div class="bar" style="height: 42%;">
+                                <small>JUN</small>
+                            </div>
+
+                            <div class="bar" style="height: 64%;">
+                                <small>JUL</small>
+                            </div>
+
+                            <div class="bar" style="height: 73%;">
+                                <small>AGO</small>
+                            </div>
+
+                            <div class="bar current" style="height: 92%;">
+                                <small>SET</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ATIVIDADES -->
+                <article class="panel activity-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="panel-label">ATIVIDADE</span>
+                            <h2>Atividades recentes</h2>
+                        </div>
+
+                        <a href="#">Ver tudo</a>
+
+                    </div>
+
+
+                    <div class="activity">
+
+                        <div class="activity-icon purple">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Novo projeto criado</strong>
+                            <p>Landing Page • há 12 min</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity">
+
+                        <div class="activity-icon blue">
+                            $
+                        </div>
+
+                        <div>
+                            <strong>Pagamento recebido</strong>
+                            <p>R$ 780,00 • há 1 hora</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity">
+
+                        <div class="activity-icon pink">
+                            ♙
+                        </div>
+
+                        <div>
+                            <strong>Novo cliente</strong>
+                            <p>Marina Studio • há 3 horas</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity">
+
+                        <div class="activity-icon green">
+                            ★
+                        </div>
+
+                        <div>
+                            <strong>Projeto finalizado</strong>
+                            <p>Cyber Store • ontem</p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- PROJETOS -->
+            <section class="panel projects-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <span class="panel-label">PROJETOS</span>
+                        <h2>Projetos recentes</h2>
+                    </div>
+
+                    <a href="#">Ver todos</a>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>PROJETO</th>
+                                <th>CLIENTE</th>
+                                <th>STATUS</th>
+                                <th>VALOR</th>
+                                <th>PRAZO</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Noir Beauty</strong>
+                                    <small>Landing Page</small>
+                                </td>
+
+                                <td>Studio Noir</td>
+
+                                <td>
+                                    <span class="status progress">
+                                        Em andamento
+                                    </span>
+                                </td>
+
+                                <td>R$ 950</td>
+
+                                <td>18 SET</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Cyber Store</strong>
+                                    <small>E-commerce</small>
+                                </td>
+
+                                <td>Cyber Tech</td>
+
+                                <td>
+                                    <span class="status completed">
+                                        Concluído
+                                    </span>
+                                </td>
+
+                                <td>R$ 1.400</td>
+
+                                <td>12 SET</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Avril Fan Page</strong>
+                                    <small>Fan Page</small>
+                                </td>
+
+                                <td>Projeto pessoal</td>
+
+                                <td>
+                                    <span class="status completed">
+                                        Concluído
+                                    </span>
+                                </td>
+
+                                <td>Projeto</td>
+
+                                <td>10 SET</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Portfolio Pady Kura</strong>
+                                    <small>Portfólio</small>
+                                </td>
+
+                                <td>Pady Kura</td>
+
+                                <td>
+                                    <span class="status progress">
+                                        Em andamento
+                                    </span>
+                                </td>
+
+                                <td>Projeto</td>
+
+                                <td>20 SET</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer>
+                <span>PULSE Dashboard</span>
+                <span>Projeto desenvolvido para estudos de HTML e CSS.</span>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

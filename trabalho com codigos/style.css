@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b080d;
+    color: #f5edf7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    padding: 25px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #251c28;
+
+    background-color: #0b080d;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #b86bd1;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #bdb2c0;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c978df;
+}
+
+.botao-menu {
+    padding: 10px 20px;
+
+    border: 1px solid #b86bd1;
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.botao-menu:hover {
+    background-color: #b86bd1;
+    color: #0b080d;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-conteudo {
+    max-width: 650px;
+}
+
+.subtitulo {
+    color: #b86bd1;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 7vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.hero h1 span,
+.titulo-secao h2 span,
+.sobre-conteudo h2 span,
+.contato h2 span {
+    color: #b86bd1;
+}
+
+.descricao {
+    max-width: 520px;
+
+    margin: 30px 0;
+
+    color: #a89daa;
+    font-size: 17px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botao-principal {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background-color: #b86bd1;
+    color: #0b080d;
+
+    font-weight: bold;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    transform: translateY(-3px);
+}
+
+.botao-secundario {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border: 1px solid #3b2e40;
+    border-radius: 30px;
+
+    color: #c8bdca;
+
+    transition: 0.3s;
+}
+
+.botao-secundario:hover {
+    border-color: #b86bd1;
+    color: #b86bd1;
+}
+
+
+/* CARD DO HERO */
+
+.hero-card {
+    width: 350px;
+    height: 450px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #3b2e40;
+
+    background: linear-gradient(
+        145deg,
+        #211526,
+        #0f0b11
+    );
+
+    overflow: hidden;
+}
+
+.card-brilho {
+    width: 180px;
+    height: 180px;
+
+    position: absolute;
+    top: -70px;
+    right: -50px;
+
+    border-radius: 50%;
+
+    background-color: #8d45a8;
+
+    filter: blur(80px);
+}
+
+.numero {
+    position: absolute;
+
+    top: 25px;
+    left: 25px;
+
+    color: #66566b;
+
+    font-size: 13px;
+}
+
+.hero-card h2 {
+    font-size: 55px;
+    letter-spacing: 10px;
+}
+
+.hero-card p {
+    color: #b86bd1;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    padding: 120px 8%;
+}
+
+.titulo-secao {
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.titulo-secao > p {
+    color: #b86bd1;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.titulo-secao h2 {
+    margin-top: 15px;
+
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.servico-card {
+    padding: 35px;
+
+    min-height: 280px;
+
+    border: 1px solid #29202c;
+
+    background-color: #100c12;
+
+    transition: 0.3s;
+}
+
+.servico-card:hover {
+    transform: translateY(-8px);
+    border-color: #b86bd1;
+}
+
+.servico-card.destaque {
+    background-color: #1b1220;
+    border-color: #6f417d;
+}
+
+.icone {
+    color: #b86bd1;
+    font-size: 30px;
+}
+
+.servico-card h3 {
+    margin: 20px 0 10px;
+
+    font-size: 24px;
+}
+
+.servico-card p {
+    color: #9f94a2;
+    margin-bottom: 25px;
+}
+
+.servico-card a {
+    color: #b86bd1;
+    font-size: 14px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.sobre-imagem {
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #33273a;
+
+    background:
+        radial-gradient(
+            circle,
+            #39203f,
+            #0d090f 65%
+        );
+}
+
+.imagem-texto {
+    font-size: 70px;
+    letter-spacing: 15px;
+
+    transform: rotate(-90deg);
+
+    color: #6e5275;
+}
+
+.sobre-conteudo {
+    max-width: 550px;
+}
+
+.sobre-conteudo h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo p:not(.subtitulo) {
+    color: #a89daa;
+
+    margin-bottom: 20px;
+}
+
+
+/* CONTATO */
+
+.contato {
+    padding: 150px 8%;
+
+    text-align: center;
+
+    border-top: 1px solid #251c28;
+}
+
+.contato h2 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.contato > p:not(.subtitulo) {
+    color: #a89daa;
+    margin-bottom: 35px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 30px 8%;
+
+    text-align: center;
+
+    border-top: 1px solid #251c28;
+
+    color: #716875;
+
+    font-size: 12px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-imagem {
+        height: 400px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cabecalho {
+        padding: 20px;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .hero,
+    .servicos,
+    .sobre,
+    .contato {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-card {
+        height: 350px;
+    }
+
+    .sobre-imagem {
+        height: 300px;
+    }
+
+}
