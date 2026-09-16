@@ -32,6 +32,7 @@ header p {
     color: #d8c9df;
 }
 
+
 /* CONTEÚDO */
 
 main {
@@ -57,6 +58,7 @@ main {
     line-height: 1.7;
     color: #cfc4d5;
 }
+
 
 /* PROJETOS */
 
@@ -108,6 +110,121 @@ main {
     background: #a855f7;
 }
 
+
+/* SOBRE MIM */
+
+.sobre {
+    text-align: center;
+    max-width: 850px;
+    margin: 20px auto 70px;
+    padding: 50px 30px;
+    background: #130d19;
+    border: 1px solid #402052;
+    border-radius: 15px;
+}
+
+.sobre h2 {
+    color: #c77dff;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    color: #cfc4d5;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* HABILIDADES */
+
+.habilidades {
+    text-align: center;
+    padding: 20px 0 70px;
+}
+
+.habilidades h2 {
+    color: #c77dff;
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+}
+
+.habilidades-lista {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.habilidade {
+    background: #130d19;
+    border: 1px solid #402052;
+    border-radius: 15px;
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.habilidade:hover {
+    transform: translateY(-6px);
+    border-color: #a855f7;
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.2);
+}
+
+.habilidade span {
+    display: block;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.habilidade h3 {
+    color: #d8a4ff;
+    margin-bottom: 12px;
+}
+
+.habilidade p {
+    color: #c7bccd;
+    line-height: 1.5;
+}
+
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+    margin: 10px auto 70px;
+    padding: 55px 30px;
+    background: linear-gradient(135deg, #130d19, #1b0b24);
+    border: 1px solid #6d2aa8;
+    border-radius: 15px;
+}
+
+.contato h2 {
+    color: #c77dff;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    color: #cfc4d5;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.botao-contato {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #7028a9;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao-contato:hover {
+    background: #a855f7;
+    transform: translateY(-2px);
+}
+
+
 /* RODAPÉ */
 
 footer {
@@ -117,7 +234,8 @@ footer {
     color: #9e91a5;
 }
 
-/* CELULAR */
+
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -125,7 +243,14 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .habilidades-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
+
+
+/* CELULAR */
 
 @media (max-width: 600px) {
 
@@ -139,6 +264,15 @@ footer {
 
     .card {
         padding: 25px;
+    }
+
+    .habilidades-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre,
+    .contato {
+        padding: 35px 20px;
     }
 
 }
